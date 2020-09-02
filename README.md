@@ -32,7 +32,9 @@ The app is composed of backend rails API and front-end React Redux clients, whic
 6. Rails API backend to persist data for the application
 
 ## Local Installation
-Download zip from my project repository: https://github.com/jacqueline-lam/portfolio
+
+### Backend Installation
+Download zip from my project repository: https://github.com/jacqueline-lam/portfolio-api
 
 Go to your terminal and change directory:
 
@@ -50,7 +52,7 @@ Use the following command to make Rails executable available.
 
 More installation instructions can be found on the [Ruby on Rails Guide](https://guides.rubyonrails.org/v5.0/getting_started.html#installing-rails)
 
-Once Ruby and Rails are installed, `cd` into `portfolio-api` and run:
+Once Ruby and Rails are installed, run:
 
     $ gem install bundler
 
@@ -61,15 +63,30 @@ Install the gems and gem dependencies for this app by running:
 
     $ bundle install
 
-And then run:
+And then run the following to create tables in database:
+
+    $ rails db:migrate
+
+And then run the following to create seed data:
 
     $ rails db:seed
 
-And then run:
+And then run server:
 
     $ rails s
 
-Lastly, to browse the API in your browser at your localhost, link to http://localhost:3000/api/v1/projects to see all projects and http://localhost:3000/api/v1/stacks to see all technical stacks.
+You can now browse the API in your browser at your localhost, link to http://localhost:3000/api/v1/projects to see all projects and http://localhost:3000/api/v1/stacks to see all technical stacks.
+
+### Frontend Installation
+Download zip from my project repository: https://github.com/jacqueline-lam/portfolio-app
+
+Make sure Backend API is running at http://localhost:3000/
+
+`cd` into `portfolio-api`, then run:
+
+    $ npm install && npm start
+
+to install all dependencies and start server. You can now browse the application in your browser at your localhost.
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/jacqueline-lam/portfolio. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
@@ -84,7 +101,3 @@ The code is available as open source under the terms of the [MIT License](https:
 ## Code of Conduct
 
 Everyone interacting in the project’s codebases is expected to follow the [code of conduct](https://github.com/jacqueline-lam/bolderer_sinatra_app/blob/master/CODE_OF_CONDUCT.md).
-
-## Attributions
-* Ellipsis/ Spinner loading gif is provided by loading.io
-* Homepage SCSS Animation by Lindsay Grizzard (source: freefrontend.com)
