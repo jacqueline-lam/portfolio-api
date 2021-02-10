@@ -56,6 +56,7 @@ project_data = [
       <li>Add/ Remove Nominations:<ul><li>User can add a movie from search results to the nomination list — by clicking the nominate button under the movie poster</li><li>The nominate button will be disabled once 5 nominations have been made</li><li>User can view nominated movies by clicking the fixed star button on the bottom right corner of the screen</li><li>The remove button will remove the selected movie from the nomination list</li></ul></li>
       <li>Notifications<ul></li>A banner will be displayed when the user has completed 5 nominations<li></ul></li>",
     image_url: "movie-nominations.png",
+    site_url:"https://jacqueline-lam.github.io/shoppies-movie-nominations/",
     github_url: "https://github.com/jacqueline-lam/shoppies-movie-nominations",
     stacks: ['Fetch API', 'HTML & CSS', 'JavaScript', 'React.JS'],
   },
