@@ -45,60 +45,32 @@ stacks.each do |stack|
 end
 
 project_data = [
-  # Project #1
+  # Project 7
   {
-    name: "Personal Website V.1",
-    description: "Before taking the Flatiron School Software Engineering Bootcamp, I designed a personal website to showcase my education, experience and achievements.",
-    reason: 'I wanted to practice the skills that I learned in my Web Applications and Programming minor at NYU, so I designed a simple personal responsive website for myself.',
-    features: '<li>Responsive web design</li><li>Use of bootsrap cards, navbar, cards and carousel</li>',
-    image_url: "personal-website-v1.png",
-    site_url: "https://jacquelinelam.neocities.org/",
-    stacks: ['HTML & CSS', 'Bootstrap'],
+    name: "The Shoppies Movie Nominations",
+    description: "The Shoppies is a responsive web app created to help manage movie nominations. It is built using React and Material UI, a React UI Framework, to implement a responsive UI design. ",
+    reason: "I wanted to create a mini project which incorporates Material UI to create a responsive and accessible design. I also wanted to showcase my ability to develop features such as real-time search, add/ remove to cart, and completion notifications, which are popular features in modern web development.",
+    features: "
+      <li>Search Movie from OMDB's API:<ul><li>Data fetched from OMDB API (movies only)</li><li>Real Time Search: any updates to the search term will update the result list</li><ul></li>
+      <li>Browse Movie Results:<ul><li>User can browse results easily - each movie card includes a movie title, year of release, and nominate button</li><li>Pagination buttons are included both on top and bottom of the page</li></ul></li>
+      <li>Add/ Remove Nominations:<ul><li>User can add a movie from search results to the nomination list — by clicking the nominate button under the movie poster</li><li>The nominate button will be disabled once 5 nominations have been made</li><li>User can view nominated movies by clicking the fixed star button on the bottom right corner of the screen</li><li>The remove button will remove the selected movie from the nomination list</li></ul></li>
+      <li>Notifications<ul></li>A banner will be displayed when the user has completed 5 nominations<li></ul></li>",
+    image_url: "movie-nominations.gif",
+    github_url: "https://github.com/jacqueline-lam/shoppies-movie-nominations",
+    stacks: ['Fetch API', 'HTML & CSS', 'JavaScript', 'React.JS'],
   },
-  # Project #2
+  # Project 6
   {
-    name: "CLI Data Gem for Indecisive Shoppers",
-    description: "I designed a CLI app that scraped data from the web page Outdoor Gear Lab. It provides shoppers with concise information about a type of product and gives them the option to inquire about the products based on chosen features/ rating catgories!",
-    reason: "I loved to do research before I purchase any clothing, and I wanted to design a CLI that could help different users make the purchase decision more easily and efficiently, by querying about the desired specifications such as comfort and durability.",
-    features: '<li>Use Open-URI and Nokogiri to scrape data from third party website</li><li>Command Line Interface to accept user input</li><li>User can make shopping decisions more easily by getting detailed and tailormade information through queries such as "list jackets by specific rating category</li>',
-    image_url: "cli_project_spread.jpg",
-    github_url: "http://github.com/jacqueline-lam/rain_jackets",
-    site_url: "http://rubygems.org/gems/rain_jackets",
-    blog_url: "http://dev.to/jacquelinelam/building-my-first-project-cli-data-gem-50m4",
-    demo_vid: "https://www.youtube.com/embed/RLkE5QlbYXo",
-    stacks: ['Ruby', 'Nokogiri', 'Object Oriented Design'],
-    comments: {
-      author: "Nick Lam",
-      email: "nick@gmail.com",
-      content: "Great job on scraping some product data and breaking down the data for making further specific queriries. This can be expanded into a great e-commerce backend project if you can scrape data for other products as well!"
-    }
+    name: "React/ Redux Personal Portfolio",
+    description: "The updated personal portfolio is designed to showcase my projects completed before and during Flatiron School's software engineering bootcamp. The target audience is recruiters and prospective employers.",
+    reason: "Building my personal website with a Rails API backend and React/ Redux frontend allows me to dynamically render updated project data and blog posts by updating my database directly.",
+    features: "<li>About page: a quick overview of my journey through software engineering</li><li>Portfolio page: User can filter projects by stacks (feature designed for recruiters)</li><li>Project page: User can leave comments under each project demo</li><li>Blog page: User can see the real-time blog updates</li><li>Contact Navbar: User can choose to conenct with me on social media anytime by clicking on the social icons on the fixed side navbar</li>",
+    image_url: "portfolio.gif",
+    github_url: "http://github.com/jacqueline-lam/portfolio",
+    blog_url: "http://dev.to/jacquelinelam/building-my-personal-portfolio-with-react-redux-pt-1-522k",
+    demo_vid: "https://www.youtube.com/embed/cTw0wAnVo1c",
+    stacks: ['ActiveRecord', 'Bootstrap', 'Fetch API', 'HTML & CSS', 'JavaScript', 'PostgreSQL', 'React.JS', 'React Router', 'Redux', 'Redux Thunk', 'RESTful API', 'Ruby', 'Ruby on Rails'],
   },
-
-  # Project 3
-  {
-    name: "Sinatra-based Bouldering Log App",
-    description: "Bolderer is a Sinatra-powered web application that I created for aspiring boulderers. Climbers can keep track of the problems that they have climbed and check out other users' climbing progress as well.",
-    reason: "Some climbing friends discussed the desire to track their climbing progress digitally so that they could record problems that they have tried or completed. We thought it would be cool to create a content management system for indoor climbing problems where users could log their problems and browse problems saved by other users.",
-    features: "<li>Sign Up Page: User validation - the user cannot sign up if the username already exists</li><li>Login Page: User authentication</li><li>All Problems - Users can view other climbers' logs</li><li>User Profile: User can create, edit and delete their own problem logs</li><li>Form Data Validation: a date, color and problem style must be selected</li>",
-    image_url: "bolderer-sinatra-app_homepage.png",
-    github_url: "http://github.com/jacqueline-lam/bolderer_sinatra_app",
-    blog_url: "http://dev.to/jacquelinelam/sinatra-web-app-mvc-sessions-and-routes-52on",
-    demo_vid: "https://www.youtube.com/embed/5xP86-lEm28",
-    stacks: ['ActiveRecord', 'Bootstrap', 'BCrypt', 'CRUD', 'HTML & CSS', 'MVC', 'RESTful API', 'Ruby', 'Sinatra', 'SQLite3']
-  },
-  # Project 4
-  {
-    name: "Ruby on Rails Bouldering Tracker (Improved Domain)",
-    description: "The Bolderer web application is an improved version of the Sinatra Bolderer project. Users are now able to browse problems in the bouldering gym by different filters, keep track of their sends, and check out other climbers who have sent the same problems. User authentication is also improved with more user validation and a 3rd party authentication system.",
-    reason: "I really enjoyed working on the Bolderer domain and wanted to add more features to the app. Specifically, I wanted users to be able to filter problems by date and difficulty. Also, I wanted to promote the sense of community by allowing users to check if other climbers have 'sent'(finished) a problem that they have also sent, and to compete for different Leaderboard positions.",
-    features: '<li>Login Page: Authentication system oAuth2 allows login from GitHub</li><li>User Sends: User can sort their sends by difficulty, date and color</li><li>User Sends: User can create a log by choosing an existing problem or creating a new problem</li><li>All Problems: User can browse problems and see which users have sent a specific problem and read their log</li><li>Validation Errors: Alert messages describing the validation failures will pop up if invalid form inputs or invalid URLs are entered</li>',
-    image_url: "rails-bolderer-app_all-jackies-sends.png",
-    github_url: "http://github.com/jacqueline-lam/rails-bolderer-app",
-    blog_url: "http://dev.to/jacquelinelam/ruby-on-rails-app-domain-with-many-to-many-relationships-3f5i",
-    demo_vid: "https://www.youtube.com/embed/gKyGpzi5n5w",
-    stacks: ['ActiveRecord', 'Bootstrap', 'BCrypt', 'CRUD', 'HTML & CSS', 'MVC', 'Omniauth', 'RESTful API', 'Ruby', 'Ruby on Rails', 'SQLite3']
-  },
-
   # Project 5
   {
     name: "Re-thinking a Recipe Manager During COVID Lockdown",
@@ -118,19 +90,58 @@ project_data = [
       content: "Searching recipes for pantry ingredients is an excellent idea and I love the design of the site 😍 Can't wait to see more recipes!"
     }
   },
-
-    # Project 6
-    {
-      name: "React/ Redux Personal Portfolio",
-      description: "The updated personal portfolio is designed to showcase my projects completed before and during Flatiron School's software engineering bootcamp. The target audience is recruiters and prospective employers.",
-      reason: "Building my personal website with a Rails API backend and React/ Redux frontend allows me to dynamically render updated project data and blog posts by updating my database directly.",
-      features: "<li>About page: a quick overview of my journey through software engineering</li><li>Portfolio page: User can filter projects by stacks (feature designed for recruiters)</li><li>Project page: User can leave comments under each project demo</li><li>Blog page: User can see the real-time blog updates</li><li>Contact Navbar: User can choose to conenct with me on social media anytime by clicking on the social icons on the fixed side navbar</li>",
-      image_url: "portfolio.gif",
-      github_url: "http://github.com/jacqueline-lam/portfolio",
-      blog_url: "http://dev.to/jacquelinelam/building-my-personal-portfolio-with-react-redux-pt-1-522k",
-      demo_vid: "https://www.youtube.com/embed/cTw0wAnVo1c",
-      stacks: ['ActiveRecord', 'Bootstrap', 'Fetch API', 'HTML & CSS', 'JavaScript', 'PostgreSQL', 'React.JS', 'React Router', 'Redux', 'Redux Thunk', 'RESTful API', 'Ruby', 'Ruby on Rails'],
+  # Project 4
+  {
+    name: "Ruby on Rails Bouldering Tracker (Improved Domain)",
+    description: "The Bolderer web application is an improved version of the Sinatra Bolderer project. Users are now able to browse problems in the bouldering gym by different filters, keep track of their sends, and check out other climbers who have sent the same problems. User authentication is also improved with more user validation and a 3rd party authentication system.",
+    reason: "I really enjoyed working on the Bolderer domain and wanted to add more features to the app. Specifically, I wanted users to be able to filter problems by date and difficulty. Also, I wanted to promote the sense of community by allowing users to check if other climbers have 'sent'(finished) a problem that they have also sent, and to compete for different Leaderboard positions.",
+    features: '<li>Login Page: Authentication system oAuth2 allows login from GitHub</li><li>User Sends: User can sort their sends by difficulty, date and color</li><li>User Sends: User can create a log by choosing an existing problem or creating a new problem</li><li>All Problems: User can browse problems and see which users have sent a specific problem and read their log</li><li>Validation Errors: Alert messages describing the validation failures will pop up if invalid form inputs or invalid URLs are entered</li>',
+    image_url: "rails-bolderer-app_all-jackies-sends.png",
+    github_url: "http://github.com/jacqueline-lam/rails-bolderer-app",
+    blog_url: "http://dev.to/jacquelinelam/ruby-on-rails-app-domain-with-many-to-many-relationships-3f5i",
+    demo_vid: "https://www.youtube.com/embed/gKyGpzi5n5w",
+    stacks: ['ActiveRecord', 'Bootstrap', 'BCrypt', 'CRUD', 'HTML & CSS', 'MVC', 'Omniauth', 'RESTful API', 'Ruby', 'Ruby on Rails', 'SQLite3']
+  },
+  # Project 3
+  {
+    name: "Sinatra-based Bouldering Log App",
+    description: "Bolderer is a Sinatra-powered web application that I created for aspiring boulderers. Climbers can keep track of the problems that they have climbed and check out other users' climbing progress as well.",
+    reason: "Some climbing friends discussed the desire to track their climbing progress digitally so that they could record problems that they have tried or completed. We thought it would be cool to create a content management system for indoor climbing problems where users could log their problems and browse problems saved by other users.",
+    features: "<li>Sign Up Page: User validation - the user cannot sign up if the username already exists</li><li>Login Page: User authentication</li><li>All Problems - Users can view other climbers' logs</li><li>User Profile: User can create, edit and delete their own problem logs</li><li>Form Data Validation: a date, color and problem style must be selected</li>",
+    image_url: "bolderer-sinatra-app_homepage.png",
+    github_url: "http://github.com/jacqueline-lam/bolderer_sinatra_app",
+    blog_url: "http://dev.to/jacquelinelam/sinatra-web-app-mvc-sessions-and-routes-52on",
+    demo_vid: "https://www.youtube.com/embed/5xP86-lEm28",
+    stacks: ['ActiveRecord', 'Bootstrap', 'BCrypt', 'CRUD', 'HTML & CSS', 'MVC', 'RESTful API', 'Ruby', 'Sinatra', 'SQLite3']
+  },
+  # Project #2
+  {
+    name: "CLI Data Gem for Indecisive Shoppers",
+    description: "I designed a CLI app that scraped data from the web page Outdoor Gear Lab. It provides shoppers with concise information about a type of product and gives them the option to inquire about the products based on chosen features/ rating catgories!",
+    reason: "I loved to do research before I purchase any clothing, and I wanted to design a CLI that could help different users make the purchase decision more easily and efficiently, by querying about the desired specifications such as comfort and durability.",
+    features: '<li>Use Open-URI and Nokogiri to scrape data from third party website</li><li>Command Line Interface to accept user input</li><li>User can make shopping decisions more easily by getting detailed and tailormade information through queries such as "list jackets by specific rating category</li>',
+    image_url: "cli_project_spread.jpg",
+    github_url: "http://github.com/jacqueline-lam/rain_jackets",
+    site_url: "http://rubygems.org/gems/rain_jackets",
+    blog_url: "http://dev.to/jacquelinelam/building-my-first-project-cli-data-gem-50m4",
+    demo_vid: "https://www.youtube.com/embed/RLkE5QlbYXo",
+    stacks: ['Ruby', 'Nokogiri', 'Object Oriented Design'],
+    comments: {
+      author: "Nick Lam",
+      email: "nick@gmail.com",
+      content: "Great job on scraping some product data and breaking down the data for making further specific queriries. This can be expanded into a great e-commerce backend project if you can scrape data for other products as well!"
     }
+  },
+  # Project #1
+  {
+    name: "Personal Website V.1",
+    description: "Before taking the Flatiron School Software Engineering Bootcamp, I designed a personal website to showcase my education, experience and achievements.",
+    reason: 'I wanted to practice the skills that I learned in my Web Applications and Programming minor at NYU, so I designed a simple personal responsive website for myself.',
+    features: '<li>Responsive web design</li><li>Use of bootsrap cards, navbar, cards and carousel</li>',
+    image_url: "personal-website-v1.png",
+    site_url: "https://jacquelinelam.neocities.org/",
+    stacks: ['HTML & CSS', 'Bootstrap'],
+  },
 ]
 
 puts "Creating projects..."
