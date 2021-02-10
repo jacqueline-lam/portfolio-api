@@ -55,7 +55,7 @@ project_data = [
       <li>Browse Movie Results:<ul><li>User can browse results easily - each movie card includes a movie title, year of release, and nominate button</li><li>Pagination buttons are included both on top and bottom of the page</li></ul></li>
       <li>Add/ Remove Nominations:<ul><li>User can add a movie from search results to the nomination list — by clicking the nominate button under the movie poster</li><li>The nominate button will be disabled once 5 nominations have been made</li><li>User can view nominated movies by clicking the fixed star button on the bottom right corner of the screen</li><li>The remove button will remove the selected movie from the nomination list</li></ul></li>
       <li>Notifications<ul></li>A banner will be displayed when the user has completed 5 nominations<li></ul></li>",
-    image_url: "movie-nominations.gif",
+    image_url: "movie-nominations.png",
     github_url: "https://github.com/jacqueline-lam/shoppies-movie-nominations",
     stacks: ['Fetch API', 'HTML & CSS', 'JavaScript', 'React.JS'],
   },
