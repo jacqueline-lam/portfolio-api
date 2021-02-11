@@ -49,14 +49,14 @@ project_data = [
   {
     name: "The Shoppies Movie Nominations",
     description: "The Shoppies is a responsive web app created to help manage movie nominations. It is built using React and Material UI, a React UI Framework, to implement a responsive UI design. ",
-    reason: "I wanted to create a mini project which incorporates Material UI to create a responsive and accessible design. I also wanted to showcase my ability to develop features such as real-time search, add/ remove to cart, and completion notifications, which are popular features in modern web development.",
+    reason: "I wanted to create a mini project which incorporates Material UI to create a responsive and accessible design. I also wanted to showcase my ability to develop features such as real-time search, add to / remove from cart, and completion notifications, which are popular features in modern web development.",
     features: "
     <ul>
       <li>Search Movie from OMDB's API:
         <ul>
           <li>Data fetched from OMDB API (movies only)</li>
           <li>Real Time Search: any updates to the search term will update the result list</li>
-        <ul>
+        </ul>
       </li>
       <li>Browse Movie Results:
         <ul>
@@ -67,13 +67,14 @@ project_data = [
       <li>Add/ Remove Nominations:
         <ul>
           <li>User can add a movie from search results to the nomination list — by clicking the nominate button under the movie poster</li>
-          <li>The nominate button will be disabled once 5 nominations have been made</li><li>User can view nominated movies by clicking the fixed star button on the bottom right corner of the screen</li>
+          <li>The nominate button will be disabled once 5 nominations have been made</li>
+          <li>User can view nominated movies by clicking the fixed star button on the bottom right corner of the screen</li>
           <li>The remove button will remove the selected movie from the nomination list</li>
         </ul>
       </li>
       <li>Notifications:
         <ul>
-          </li>A banner will be displayed when the user has completed 5 nominations<li>
+          </li>A banner will be displayed when the user has completed 5 nominations</li>
         </ul>
       </li>
     </ul>",
