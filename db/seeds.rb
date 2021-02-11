@@ -74,7 +74,7 @@ project_data = [
       </li>
       <li>Notifications:
         <ul>
-          </li>A banner will be displayed when the user has completed 5 nominations</li>
+          <li>A banner will be displayed when the user has completed 5 nominations</li>
         </ul>
       </li>
     </ul>",
