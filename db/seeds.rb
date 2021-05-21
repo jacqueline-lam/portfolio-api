@@ -90,7 +90,7 @@ project_data = [
     reason: "Building my personal website with a Rails API backend and React/ Redux frontend allows me to dynamically render updated project data and blog posts by updating my database directly.",
     features: "<li>About page: a quick overview of my journey through software engineering</li><li>Portfolio page: User can filter projects by stacks (feature designed for recruiters)</li><li>Project page: User can leave comments under each project demo</li><li>Blog page: User can see the real-time blog updates</li><li>Contact Navbar: User can choose to conenct with me on social media anytime by clicking on the social icons on the fixed side navbar</li>",
     image_url: "portfolio.gif",
-    github_url: "http://github.com/jacqueline-lam/portfolio",
+    github_url: "https://github.com/jacqueline-lam/portfolio-app",
     blog_url: "http://dev.to/jacquelinelam/building-my-personal-portfolio-with-react-redux-pt-1-522k",
     demo_vid: "https://www.youtube.com/embed/cTw0wAnVo1c",
     stacks: ['ActiveRecord', 'Bootstrap', 'Fetch API', 'HTML & CSS', 'JavaScript', 'PostgreSQL', 'React.JS', 'React Router', 'Redux', 'Redux Thunk', 'RESTful API', 'Ruby', 'Ruby on Rails'],
